@@ -1,0 +1,7 @@
+body {
+  position: relative;
+  background: color-mix(in srgb, #000, transparent 90%);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
