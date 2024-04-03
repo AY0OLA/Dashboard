@@ -1,25 +1,8 @@
 .navsItem {
-  position: absolute;
-  top: 120px;
-  left: 312px;
-  z-index: -1;
   .firstNav {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 586px;
-    height: 959px;
-
     .box {
-      display: flex;
-      flex-direction: column;
       width: 786px;
-      position: relative;
       height: 160px;
-      border-radius: 12px;
-      justify-content: center;
-      overflow: hidden;
-      z-index: 100;
 
       img {
         position: absolute;
@@ -66,7 +49,7 @@
       }
     }
 
-    .boxs {
+    /* .boxs {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
@@ -420,6 +403,6 @@
           }
         }
       }
-    }
+    } */
   }
 }

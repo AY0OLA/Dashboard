@@ -7,9 +7,9 @@ import { LiaGripfire } from "react-icons/lia";
 const Navbar = () => {
   return (
     <>
-      <div className="navsItem">
-        <div className="firstNav">
-          <div className="box">
+      <div className="navsItem absolute top-32 -z-10 left-72">
+        <div className="firstNav flex flex-col gap-24 max-w-screen-md">
+          <div className="box flex flex-col relative z-10 overflow-hidden justify-center rounded-xl">
             <div className="overlay"></div>
             <img src="src/image/strech.jpeg" alt="" />
             <strong>Track Your Daily Activities</strong>
@@ -19,7 +19,7 @@ const Navbar = () => {
               sed do eiusmod
             </span>
           </div>
-          <div className="boxs">
+          {/* <div className="boxs">
             <div className="boxsContent">
               <div className="icon">
                 <div className="back">
@@ -154,7 +154,7 @@ const Navbar = () => {
                 <span>Steps</span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
