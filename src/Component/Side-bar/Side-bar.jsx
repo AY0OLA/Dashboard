@@ -1,5 +1,4 @@
 import React from "react";
-import "./Side-bar.css";
 import { CgGym } from "react-icons/cg";
 import { CiGrid41 } from "react-icons/ci";
 import { PiTimerThin } from "react-icons/pi";
@@ -55,21 +54,25 @@ w-64 bg-white py-1 fixed "
           </div>
         </div>
       </div>
-      <div className="navs">
-        <div className="items">
-          <div className="greetings">
-            <small>Good Morning</small>
+      <div className="navs absolute right-[0] px-[24px] py-[32px] z-10 flex h-[88px] w-[1110px] border-solid border-1 border-b-amber-50	bg-white">
+        <div className="flex justify-between">
+          <div className="flex flex-col ml-9 text-base	 font-semibold w-[295px] text-[#475569]">
+            <small className="font-normal	text-xs">Good Morning</small>
             Welcome Back!
           </div>
-          <div className="icons">
-            <div className="search">
-              <input type="text" placeholder="Search" />
-              <CiSearch className="icon" />
+          <div className="flex">
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Search"
+                className="w-[499px] h-[40px] py-[8px] px-[3rem] gap-3 outline-none rounded border-2 border-slate-500 text-lg	font-normal	text-[#64748b] placeholder:text-sm bg-slate-200"
+              />
+              <CiSearch className="absolute w-[30px] h-[30px] top-[5px] left-[3px]" />
             </div>
-            <div className="item">
-              <IoIosNotifications className="icon" />
-              <IoMdSettings className="icon" />
-              <input capture="environment" />
+            <div className="flex text-center items-center ml-16 gap-4">
+              <IoIosNotifications className="w-[20.01px] h-[18.88px] text-[#64748b] cursor-pointer" />
+              <IoMdSettings className="w-[20.01px] h-[18.88px] text-[#64748b] cursor-pointer" />
+              <input className="w-[40px] h-[40px] cursor-pointer border-2 border-slate-500 rounded-full outline-none" />
             </div>
           </div>
         </div>

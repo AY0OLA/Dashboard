@@ -8,4 +8,11 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Manrope;
+}
+.navs {
+  position: fixed;
+}
+::after {
+  clip-path: polygon(0 10%, 0 30%, 80% 5%, 0 50%);
 }
