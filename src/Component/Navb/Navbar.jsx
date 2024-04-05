@@ -2,6 +2,7 @@ import React from "react";
 import { CgGym } from "react-icons/cg";
 import { PiFootprintsThin } from "react-icons/pi";
 import { LiaGripfire } from "react-icons/lia";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Navbar = () => {
   return (
@@ -111,37 +112,37 @@ const Navbar = () => {
                 <hr className="w-[679px]" />
                 <hr className="w-[679px]" />
               </div>
-              <div className="flex gap-0 items-baseline	absolute left-[98px] top-[48px]">
+              <div className="flex gap-1 items-baseline	absolute left-[93px] top-[48px]">
                 <div className="w-[7px] h-[53px] rounded bg-cyan-500	"></div>
                 <div className="w-[7px] h-[93px] rounded bg-orange-600	"></div>
                 <div className="w-[7px] h-[123px] rounded bg-violet-500	"></div>
               </div>
-              <div className="flex gap-0 items-baseline	absolute left-[188px] top-[48px]">
+              <div className="flex gap-1 items-baseline	absolute left-[182px] top-[48px]">
                 <div className="w-[7px] h-[53px] rounded bg-cyan-500	"></div>
                 <div className="w-[7px] h-[123px] rounded bg-orange-600	"></div>
                 <div className="w-[7px] h-[43px] rounded bg-violet-500	"></div>
               </div>
-              <div className="flex gap-0 items-baseline	absolute left-[275px] top-[68px]">
+              <div className="flex gap-1 items-baseline	absolute left-[270px] top-[68px]">
                 <div className="w-[7px] h-[53px] rounded bg-cyan-500	"></div>
                 <div className="w-[7px] h-[103px] rounded bg-orange-600	"></div>
                 <div className="w-[7px] h-[93px] rounded bg-violet-500	"></div>
               </div>
-              <div className="flex gap-0 items-baseline	absolute left-[365px] top-[58px]">
+              <div className="flex gap-1 items-baseline	absolute left-[360px] top-[58px]">
                 <div className="w-[7px] h-[63px] rounded bg-cyan-500	"></div>
                 <div className="w-[7px] h-[113px] rounded bg-orange-600	"></div>
                 <div className="w-[7px] h-[43px] rounded bg-violet-500	"></div>
               </div>
-              <div className="flex gap-0 items-baseline	absolute left-[450px] top-[58px]">
+              <div className="flex gap-1 items-baseline	absolute left-[446px] top-[58px]">
                 <div className="w-[7px] h-[69px] rounded bg-cyan-500	"></div>
                 <div className="w-[7px] h-[113px] rounded bg-orange-600	"></div>
                 <div className="w-[7px] h-[93px] rounded bg-violet-500	"></div>
               </div>
-              <div className="flex gap-0 items-baseline	absolute left-[530px] top-[58px]">
+              <div className="flex gap-1 items-baseline	absolute left-[528px] top-[58px]">
                 <div className="w-[7px] h-[99px] rounded bg-cyan-500	"></div>
                 <div className="w-[7px] h-[53px] rounded bg-orange-600	"></div>
                 <div className="w-[7px] h-[113px] rounded bg-violet-500	"></div>
               </div>
-              <div className="flex gap-0 items-baseline	absolute left-[615px] top-[48px]">
+              <div className="flex gap-1 items-baseline	absolute left-[610px] top-[48px]">
                 <div className="w-[7px] h-[91px] rounded bg-cyan-500	"></div>
                 <div className="w-[7px] h-[53px] rounded bg-orange-600	"></div>
                 <div className="w-[7px] h-[123px] rounded bg-violet-500	"></div>
@@ -277,16 +278,159 @@ const Navbar = () => {
             </table>
           </div>
         </div>
-        <div className="navs flex flex-col ml-[800px] w-[220px]">
+        <div className="flex flex-col ml-[30px] w-[255px] z-10">
           <div className="">
             <header className="flex justify-between items-center text-center">
               <h1 className="text-xl	font-bold	text-[#475569]">My Schedule</h1>
-              <span className="text-sm font-medium text-[#F97316]">
-                View All
+              <span className="text-sm font-medium text-[#F97316] flex justify-center items-center text-center gap-1 cursor-pointer">
+                View All <IoIosArrowForward />
               </span>
             </header>
 
-            <div className="container"></div>
+            <div className="container flex flex-col mt-4 gap-2">
+              <div className="flex flex-col bg-white rounded p-[16px] h-[100px] w-[250px] gap-5">
+                <div className="text-lg	font-medium	text-[#475569] leading-4 tracking-wider">
+                  Monday
+                </div>
+                <div className="flex justify-between items-center text-center">
+                  <div className="flex gap-2">
+                    <img
+                      src="src/image/box4.png"
+                      alt=""
+                      className="w-[43.11px] h-[32px]"
+                    />
+                    <div className="flex flex-col gap-0">
+                      <div className="font-medium	text-sm	leading-4	tracking-tighter	text-[#1E293B]">
+                        Stretch
+                      </div>
+                      <div className="font-normal	text-xs	tracking-tighter	leading-3	text-[#475569]">
+                        At 08:00
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-[#FFF7ED] py-[4px] px-[8px] rounded-full text-[#F97316] font-medium	leading-4	text-base	">
+                    20 Sets
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col bg-white rounded p-[16px] h-[100px] w-[250px] gap-5">
+                <div className="text-lg	font-medium	text-[#475569] leading-4 tracking-wider">
+                  Tuesday
+                </div>
+                <div className="flex justify-between items-center ">
+                  <div className="flex gap-1">
+                    <img
+                      src="src/image/box5.png"
+                      alt=""
+                      className="w-[43.11px] h-[32px] "
+                    />
+                    <div className="flex flex-col gap-0 ">
+                      <div className="font-medium	text-sm	leading-4	tracking-tighter	text-[#1E293B]">
+                        Back Stretch
+                      </div>
+                      <div className="font-normal	text-xs	tracking-tighter	leading-3	text-[#475569]">
+                        At 08:00
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-[#FFF7ED] py-[4px] px-[8px] rounded-full text-[#F97316] font-medium	leading-4	text-base	flex">
+                    10 Round
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col bg-white rounded p-[16px] h-[100px] w-[250px] gap-5">
+                <div className="text-lg	font-medium	text-[#475569] leading-4 tracking-wider">
+                  Wednesday
+                </div>
+                <div className="flex justify-between items-center text-center">
+                  <div className="flex gap-2">
+                    <img
+                      src="src/image/box6.png"
+                      alt=""
+                      className="w-[43.11px] h-[32px]"
+                    />
+                    <div className="flex flex-col gap-0">
+                      <div className="font-medium	text-sm	leading-4	tracking-tighter	text-[#1E293B]">
+                        Yoga
+                      </div>
+                      <div className="font-normal	text-xs	tracking-tighter	leading-3	text-[#475569]">
+                        20 min
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-[#FFF7ED] py-[4px] px-[8px] rounded-full text-[#F97316] font-medium	leading-4	text-base	">
+                    20 Sets
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mt-6">
+            <header className="flex justify-between items-center text-center">
+              <h1 className="text-xl	font-bold	text-[#475569]">Goals</h1>
+              <span className="text-sm font-medium text-[#F97316] flex justify-center items-center text-center gap-1 cursor-pointer">
+                View All <IoIosArrowForward />
+              </span>
+            </header>
+
+            <div className="container flex flex-col mt-4 gap-6">
+              <div className="flex flex-col bg-white rounded p-[13px] h-[66px] w-[255px] gap-5">
+                <div className="flex justify-between items-center gap-0">
+                  <div className="flex gap-2">
+                    <div className="flex flex-col gap-0">
+                      <div className="font-medium	text-sm	leading-4	tracking-tighter	text-[#1E293B]">
+                        ABS & Stretch
+                      </div>
+                      <div className="font-normal	text-xs	tracking-tighter	leading-3	text-[#475569]">
+                        Saturday, April 14 | 08:00 AM
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-[#FFF7ED] py-[4px] px-[8px] rounded-full text-[#F97316] font-medium	leading-4	text-base	">
+                    30 Min/day
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col bg-white rounded p-[13px] h-[66px] w-[255px] gap-5">
+                <div className="flex justify-between items-center">
+                  <div className="flex gap-1">
+                    <div className="flex flex-col gap-0 ">
+                      <div className="font-medium	text-sm	leading-4	tracking-tighter	text-[#1E293B]">
+                        Push Up
+                      </div>
+                      <div className="font-normal	text-xs	tracking-tighter	leading-3	text-[#475569]">
+                        Sunday, April 15 | 08:00 AM
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-[#FFF7ED] py-[4px] px-[8px] rounded-full text-[#F97316] font-medium	leading-4	text-base	flex">
+                    50 Sets/day
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mt-6 w-[250px] h-[192px] rounded text-[#FFFFFF] py-[24px] px-[16px] bg-gradient-to-r from-[#7C6DD7] to-[#C4BAFF] flex flex-col gap-5 relative overflow-hidden">
+            <div className="font-semibold	text-sm	leading-5	h-[20px] w-[210px]">
+              50% off on Premium Membership
+            </div>
+            <div className="h-[32px] leading-4	text-xs	font-normal	tracking-wide	w-[200px]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod
+            </div>
+
+            <a
+              href="#"
+              className="mt-4 w-[106px] h-[36px] rounded py-[8px] px-[24px] bg-[#F97316] items-center no-underline text-center font-semibold	text-sm	leading-5	"
+            >
+              Upgrade
+            </a>
+            <img
+              src="src/image/box8.png"
+              alt=""
+              className="w-[67px] h-[129px] absolute right-0 top-[60px] z-10"
+            />
+            <div className="absolute w-[134px] h-[134px] bg-[#7C6DD766] rounded-full left-[146px] top-[106px]"></div>
           </div>
         </div>
       </div>

@@ -11,8 +11,10 @@ import { BsBoxArrowInLeft } from "react-icons/bs";
 import { IoIosNotifications } from "react-icons/io";
 import { IoMdSettings } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
+  const Navigate = useNavigate();
   return (
     <div className="flex">
       <div
@@ -23,11 +25,17 @@ w-64 bg-white py-1 fixed "
           Fitness <CgGym />
         </h1>
         <div className="flex flex-col mt-6 gap-4 text-left items-lastbaseline">
-          <div className="flex active items-center gap-2 font-semibold text-sm/[14px] text-[#475569]  hover:bg-orange-400 hover:border-none hover:text-[#fff] p-2 cursor-pointer rounded">
+          <div
+            className="flex active items-center gap-2 font-semibold text-sm/[14px] text-[#475569]  hover:bg-orange-400 hover:border-none hover:text-[#fff] p-2 cursor-pointer rounded"
+            onClick={() => Navigate("/")}
+          >
             <CiGrid41 className="w-7 h-7" />
             Overview
           </div>
-          <div className="flex items-center gap-2 font-semibold text-sm/[14px] text-[#475569]  p-2 cursor-pointer hover:bg-orange-400 hover:border-none hover:text-[#fff] rounded">
+          <div
+            className="flex items-center gap-2 font-semibold text-sm/[14px] text-[#475569]  p-2 cursor-pointer hover:bg-orange-400 hover:border-none hover:text-[#fff] rounded"
+            onClick={() => Navigate("/workout")}
+          >
             <CgGym className="w-7 h-7" /> Workout
           </div>
           <div className="flex items-center gap-2 font-semibold text-sm/[14px] text-[#475569] p-2 cursor-pointer hover:bg-orange-400 hover:border-none hover:text-[#fff] rounded">

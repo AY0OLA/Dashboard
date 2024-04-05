@@ -12,7 +12,12 @@ body {
 }
 .navs {
   position: fixed;
+  overflow: scroll;
+  scroll-behavior: smooth;
 }
 ::after {
   clip-path: polygon(0 10%, 0 30%, 80% 5%, 0 50%);
+}
+.navs::-webkit-scrollbar {
+  display: none;
 }
