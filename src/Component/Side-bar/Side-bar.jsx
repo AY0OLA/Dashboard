@@ -38,7 +38,10 @@ w-64 bg-white py-1 fixed "
           >
             <CgGym className="w-7 h-7" /> Workout
           </div>
-          <div className="flex items-center gap-2 font-semibold text-sm/[14px] text-[#475569] p-2 cursor-pointer hover:bg-orange-400 hover:border-none hover:text-[#fff] rounded">
+          <div
+            className="flex items-center gap-2 font-semibold text-sm/[14px] text-[#475569] p-2 cursor-pointer hover:bg-orange-400 hover:border-none hover:text-[#fff] rounded"
+            onClick={() => Navigate("/diet")}
+          >
             <PiNotepadLight className="w-7 h-7" /> Diet Plan
           </div>
           <div className="flex items-center gap-2 font-semibold text-sm/[14px] text-[#475569] p-2 cursor-pointer hover:bg-orange-400 hover:border-none hover:text-[#fff] rounded">
