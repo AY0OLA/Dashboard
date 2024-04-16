@@ -3,18 +3,20 @@ import { CgGym } from "react-icons/cg";
 import { PiFootprintsThin } from "react-icons/pi";
 import { LiaGripfire } from "react-icons/lia";
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const Navigate = useNavigate();
   return (
-    <>
+    <div className="las">
       <div className="absolute flex top-32 -z-10 left-72">
         <div className="flex flex-col gap-6 max-w-3xl z-10">
-          <div className="flex flex-col relative overflow-hidden justify-center rounded-xl h-40 w-[786px]">
-            <div className="bg-gradient-to-r from-orange-500 from-50% via-white-500 via-90% to-white-500 to-90% absolute w-[786px] -z-10 h-[400px]"></div>
+          <div className="flex flex-col relative overflow-hidden justify-center rounded-xl h-40 w-[726px]">
+            <div className="bg-gradient-to-r from-orange-500 from-45% via-white-500 via-90% to-white-500 to-90% absolute w-[786px] -z-10 h-[400px]"></div>
             <img
               src="src/image/strech.jpeg"
               alt=""
-              className="absolute h-[290px] top-[-75px] left-[400px] -z-20"
+              className="absolute h-[290px] top-[-75px] left-[340px] -z-20"
             />
             <strong className="ml-4 w-[306px] h-[33px] text-2xl	text-white	">
               Track Your Daily Activities
@@ -26,7 +28,7 @@ const Navbar = () => {
             </span>
           </div>
           <div className="boxs container flex gap-2 flex-wrap justify-center items-center">
-            <div className="w-[250px] h-[168px] rounded-lg bg-cyan-500 relative overflow-hidden after:content-[''] after:absolute after:w-[252px] after:h-[118px] after:bg-gradient-to-r from-sky-500 via-80% after:border-y-cyan-300	">
+            <div className="w-[230px] h-[168px] rounded-lg bg-cyan-500 relative overflow-hidden after:content-[''] after:absolute after:w-[252px] after:h-[118px] after:bg-gradient-to-r from-sky-500 via-80% after:border-y-cyan-300	">
               <div className="p-[20px] flex items-center gap-2.5	">
                 <div className="rounded bg-sky-400 border-none px-1.5">
                   <CgGym className="w-[45px] h-[45px] text-[#fff]" />
@@ -36,7 +38,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[250px] h-[168px] rounded-lg bg-orange-600 relative overflow-hidden after:content-[''] after:absolute after:w-[252px] after:h-[118px] after:bg-gradient-to-r from-orange-500 via-80% after:border-y-cyan-300">
+            <div className="w-[230px] h-[168px] rounded-lg bg-orange-600 relative overflow-hidden after:content-[''] after:absolute after:w-[252px] after:h-[118px] after:bg-gradient-to-r from-orange-500 via-80% after:border-y-cyan-300">
               <div className="p-[20px] flex items-center gap-2.5">
                 <div className="rounded bg-orange-400 border-none px-1.5">
                   <LiaGripfire className="w-[45px] h-[45px] text-[#fff]" />
@@ -46,7 +48,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[250px] h-[168px] rounded-lg bg-violet-500 relative overflow-hidden after:content-[''] after:absolute after:w-[252px] after:h-[118px] after:bg-gradient-to-r from-violet-900 via-80% after:border-y-cyan-300">
+            <div className="w-[230px] h-[168px] rounded-lg bg-violet-500 relative overflow-hidden after:content-[''] after:absolute after:w-[252px] after:h-[118px] after:bg-gradient-to-r from-violet-900 via-80% after:border-y-cyan-300">
               <div className="p-[20px] flex items-center gap-2.5">
                 <div className="rounded bg-violet-400 border-none px-1.5">
                   <PiFootprintsThin className="w-[45px] h-[45px] text-[#fff]" />
@@ -57,7 +59,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="w-[786px] h-[336px] flex-nowrap rounded-xl py-[24px] px-[32px] bg-white shadow-2xl shadow-sky-500/50">
+          <div className="w-[726px] h-[336px] flex-nowrap rounded-xl py-[24px] px-[32px] bg-white shadow-2xl shadow-sky-500/50">
             <div className="flex items-center text-center justify-between flex-nowrap	">
               <h1 className="text-base font-bold text-[#475569]">
                 Goal Progress
@@ -95,7 +97,7 @@ const Navbar = () => {
                 </select>
               </label>
             </div>
-            <div className="flex flex-nowrap gap-3 items-center justify-center text-center relative mt-7">
+            <div className="flex flex-nowrap gap-3 items-center justify-center text-center relative mt-7 w-[690px]">
               <div className="flex flex-col gap-4">
                 <span className="text-xs font-normal text-[#64748b]">100%</span>
                 <span className="text-xs font-normal text-[#64748b]">80%</span>
@@ -105,12 +107,12 @@ const Navbar = () => {
                 <span className="text-xs font-normal text-[#64748b]">0%</span>
               </div>
               <div className="flex flex-col gap-8">
-                <hr className="w-[679px]" />
-                <hr className="w-[679px]" />
-                <hr className="w-[679px]" />
-                <hr className="w-[679px]" />
-                <hr className="w-[679px]" />
-                <hr className="w-[679px]" />
+                <hr className="w-[610px]" />
+                <hr className="w-[610px]" />
+                <hr className="w-[610px]" />
+                <hr className="w-[610px]" />
+                <hr className="w-[610px]" />
+                <hr className="w-[610px]" />
               </div>
               <div className="flex gap-1 items-baseline	absolute left-[93px] top-[48px]">
                 <div className="w-[7px] h-[53px] rounded bg-cyan-500	"></div>
@@ -181,7 +183,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="mt-9 flex flex-col text-center items-center justify-center w-[786px]">
+          <div className="mt-9 flex flex-col text-center items-center justify-center w-[726px]">
             <table className="w-[786px] flex flex-col gap-4 items-center text-sm border-collapse">
               <thead>
                 <tr>
@@ -278,17 +280,20 @@ const Navbar = () => {
             </table>
           </div>
         </div>
-        <div className="flex flex-col ml-[30px] w-[255px] z-10">
+        <div className="flex flex-col ml-[30px] w-[285px] z-10">
           <div className="">
             <header className="flex justify-between items-center text-center">
               <h1 className="text-xl	font-bold	text-[#475569]">My Schedule</h1>
-              <span className="text-sm font-medium text-[#F97316] flex justify-center items-center text-center gap-1 cursor-pointer">
+              <span
+                className="text-sm font-medium text-[#F97316] flex justify-center items-center text-center gap-1 cursor-pointer"
+                onClick={() => Navigate("/schedule")}
+              >
                 View All <IoIosArrowForward />
               </span>
             </header>
 
             <div className="container flex flex-col mt-4 gap-2">
-              <div className="flex flex-col bg-white rounded p-[16px] h-[100px] w-[250px] gap-5">
+              <div className="flex flex-col bg-white rounded p-[16px] h-[100px] w-[285px] gap-5">
                 <div className="text-lg	font-medium	text-[#475569] leading-4 tracking-wider">
                   Monday
                 </div>
@@ -313,7 +318,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col bg-white rounded p-[16px] h-[100px] w-[250px] gap-5">
+              <div className="flex flex-col bg-white rounded p-[16px] h-[100px] w-[285px] gap-5">
                 <div className="text-lg	font-medium	text-[#475569] leading-4 tracking-wider">
                   Tuesday
                 </div>
@@ -338,7 +343,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col bg-white rounded p-[16px] h-[100px] w-[250px] gap-5">
+              <div className="flex flex-col bg-white rounded p-[16px] h-[100px] w-[285px] gap-5">
                 <div className="text-lg	font-medium	text-[#475569] leading-4 tracking-wider">
                   Wednesday
                 </div>
@@ -368,13 +373,16 @@ const Navbar = () => {
           <div className="mt-6">
             <header className="flex justify-between items-center text-center">
               <h1 className="text-xl	font-bold	text-[#475569]">Goals</h1>
-              <span className="text-sm font-medium text-[#F97316] flex justify-center items-center text-center gap-1 cursor-pointer">
+              <span
+                className="text-sm font-medium text-[#F97316] flex justify-center items-center text-center gap-1 cursor-pointer"
+                onClick={() => Navigate("/goals")}
+              >
                 View All <IoIosArrowForward />
               </span>
             </header>
 
             <div className="container flex flex-col mt-4 gap-6">
-              <div className="flex flex-col bg-white rounded p-[13px] h-[66px] w-[255px] gap-5">
+              <div className="flex flex-col bg-white rounded p-[13px] h-[66px] w-[285px] gap-5">
                 <div className="flex justify-between items-center gap-0">
                   <div className="flex gap-2">
                     <div className="flex flex-col gap-0">
@@ -391,7 +399,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col bg-white rounded p-[13px] h-[66px] w-[255px] gap-5">
+              <div className="flex flex-col bg-white rounded p-[13px] h-[66px] w-[285px] gap-5">
                 <div className="flex justify-between items-center">
                   <div className="flex gap-1">
                     <div className="flex flex-col gap-0 ">
@@ -410,7 +418,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="mt-6 w-[250px] h-[192px] rounded text-[#FFFFFF] py-[24px] px-[16px] bg-gradient-to-r from-[#7C6DD7] to-[#C4BAFF] flex flex-col gap-5 relative overflow-hidden">
+          <div className="mt-6 w-[285px] h-[192px] rounded text-[#FFFFFF] py-[24px] px-[16px] bg-gradient-to-r from-[#7C6DD7] to-[#C4BAFF] flex flex-col gap-5 relative overflow-hidden">
             <div className="font-semibold	text-sm	leading-5	h-[20px] w-[210px]">
               50% off on Premium Membership
             </div>
@@ -430,11 +438,11 @@ const Navbar = () => {
               alt=""
               className="w-[67px] h-[129px] absolute right-0 top-[60px] z-10"
             />
-            <div className="absolute w-[134px] h-[134px] bg-[#7C6DD766] rounded-full left-[146px] top-[106px]"></div>
+            <div className="absolute w-[134px] h-[134px] bg-[#7C6DD766] rounded-full left-[186px] top-[106px]"></div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

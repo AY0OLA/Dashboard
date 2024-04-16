@@ -2,7 +2,7 @@ import img1 from "/src/image/box4.png";
 import img2 from "/src/image/box9.png";
 import img3 from "/src/image/box6.png";
 import img4 from "/src/image/box4.png";
-import img5 from "/src/image/box2.jpeg";
+import img5 from "/src/image/box9.png";
 
 export const Days = [
   {

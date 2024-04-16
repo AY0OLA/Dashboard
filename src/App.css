@@ -1,4 +1,73 @@
 .active {
-  /* background-color: rgba(249, 115, 22, 1);
-  color: #fff; */
+  background-color: rgba(249, 115, 22, 1);
+  color: #fff;
+}
+.icon {
+  display: none;
+}
+.mov {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .med {
+    position: absolute;
+    left: -600px;
+    top: 1rem;
+    z-index: 100;
+  }
+  .navs {
+    position: absolute;
+    left: 0;
+    position: fixed;
+  }
+  .las {
+    position: absolute;
+    left: -17rem;
+  }
+  .icon {
+    display: inline;
+    cursor: pointer;
+  }
+  .bigs {
+    margin-left: -4rem;
+    .big {
+      margin-left: -3.5rem;
+    }
+    .move {
+      left: -3.4rem;
+    }
+  }
+}
+.fd {
+  left: 0;
+}
+@media (max-width: 840px) {
+  .bigs {
+    .big {
+      width: 420px;
+    }
+  }
+}
+@media (max-width: 779px) {
+  .bigs {
+    .big {
+      width: 390px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .bigs {
+    position: absolute;
+    top: -8rem;
+    left: -12rem;
+    z-index: 200;
+    width: 0;
+  }
+  .mov {
+    display: inline;
+  }
+}
+.mm {
+  top: 5rem;
 }

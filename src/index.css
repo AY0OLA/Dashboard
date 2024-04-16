@@ -9,6 +9,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: Manrope;
+  color: #475569;
 }
 .navs {
   position: fixed;

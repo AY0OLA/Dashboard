@@ -5,6 +5,9 @@ import Navbar from "./Component/Navb/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Workout from "./Component/Workout";
 import Diet from "./Component/Diet";
+import Goals from "./Component/Goals";
+import Schedule from "./Component/Schedule";
+import Progress from "./Component/Progress";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
           <Route path="/" element={<Navbar />} />
           <Route path="/workout" element={<Workout />} />
           <Route path="/diet" element={<Diet />} />
+          <Route path="/goals" element={<Goals />} />
+          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/progress" element={<Progress />} />
         </Routes>
       </Router>
     </>

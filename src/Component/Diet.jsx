@@ -4,7 +4,7 @@ import { plan } from "../Weeklyplan";
 
 const Diet = () => {
   return (
-    <>
+    <div className="las">
       <div className="absolute flex top-32 -z-10 left-72">
         <div className="flex flex-col gap-6 max-w-3xl z-10">
           <div className="flex flex-col relative overflow-hidden justify-center rounded-xl h-40 w-[726px]">
@@ -134,7 +134,7 @@ const Diet = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
